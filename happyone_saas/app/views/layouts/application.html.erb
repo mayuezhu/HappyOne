@@ -3,7 +3,9 @@
 <head>
   <title>Happy One</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
   <%= javascript_include_tag 'application' %>
+  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -20,12 +22,21 @@
         <i class="fa fa-smile-o fa-lg"></i>
         Happy One
       <% end %>
-        
     </div>
+    
     <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
+        <% else %>
+          <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
+        <% end %>
+      </div>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
-         <li><%= link_to "Contact Us", new_contact_path %></li>
+        <li><%= link_to "Contact Us", new_contact_path %></li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
