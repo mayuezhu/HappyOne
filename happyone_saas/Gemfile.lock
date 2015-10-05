@@ -46,11 +46,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-<<<<<<< HEAD
-=======
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
->>>>>>> development
     erubis (2.7.0)
     execjs (2.6.0)
     figaro (1.0.0)
@@ -74,10 +71,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.8.1)
     multi_json (1.11.2)
-<<<<<<< HEAD
-=======
     netrc (0.10.3)
->>>>>>> development
     orm_adapter (0.5.0)
     pg (0.18.3)
     polyglot (0.3.5)
@@ -108,13 +102,10 @@ GEM
     rdoc (4.2.0)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
-<<<<<<< HEAD
-=======
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
->>>>>>> development
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -150,12 +141,9 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-<<<<<<< HEAD
-=======
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
->>>>>>> development
     warden (1.2.3)
       rack (>= 1.0)
 
@@ -166,10 +154,7 @@ DEPENDENCIES
   bootstrap-sass (= 3.3.1)
   coffee-rails (~> 4.0.0)
   devise (= 3.4.1)
-<<<<<<< HEAD
-=======
   figaro (= 1.0.0)
->>>>>>> development
   font-awesome-sass (= 4.2.0)
   jbuilder (= 2.0)
   jquery-rails
